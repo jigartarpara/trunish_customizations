@@ -3,10 +3,18 @@ import frappe
 
 def setup_custom_fields():
     custom_fields = {
+        "Sales Order Item": [
+            dict(
+                fieldname='discount_screen',
+                label='Trade Discount',
+                fieldtype='Data',
+                insert_after='discount_percentage'
+            ),
+        ],
         "Sales Invoice Item": [
             dict(
                 fieldname='discount_screen',
-                label='Discount Screen',
+                label='Trade Discount',
                 fieldtype='Data',
                 insert_after='discount_percentage'
             ),
@@ -14,7 +22,7 @@ def setup_custom_fields():
         "Item Price": [
             dict(
                 fieldname='discount_screen',
-                label='Discount Screen',
+                label='Trade Discount',
                 fieldtype='Data',
                 insert_after='price_list_rate',
             ),
