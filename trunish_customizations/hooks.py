@@ -63,7 +63,7 @@ doctype_js = {"Sales Invoice" : "public/js/sales_invoice.js"}
 
 # before_install = "trunish_customizations.install.before_install"
 # after_install = "trunish_customizations.install.after_install"
-
+after_migrate = "trunish_customizations.custom_field.setup_custom_fields"
 # Uninstallation
 # ------------
 
