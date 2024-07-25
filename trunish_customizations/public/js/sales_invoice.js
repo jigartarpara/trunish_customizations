@@ -2,7 +2,6 @@ frappe.ui.form.on("Sales Invoice Item", {
     discount_screen: calculate_discount,
     price_list_rate: function(frm, cdt, cdn){
         var row = locals[cdt][cdn];
-        console.log("Price list rate "+row.price_list_rate)
         frappe.db.get_value(
             "Item Price",
             { 

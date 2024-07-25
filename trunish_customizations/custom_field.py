@@ -8,7 +8,7 @@ def setup_custom_fields():
                 fieldname='discount_screen',
                 label='Discount Screen',
                 fieldtype='Data',
-                insert_after='discount_percentage',
+                insert_after='discount_percentage'
             ),
         ],
         "Item Price": [
