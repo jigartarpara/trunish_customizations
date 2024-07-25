@@ -11,6 +11,14 @@ def setup_custom_fields():
                 insert_after='discount_percentage',
             ),
         ],
+        "Item Price": [
+            dict(
+                fieldname='discount_screen',
+                label='Discount Screen',
+                fieldtype='Data',
+                insert_after='price_list_rate',
+            ),
+        ],
 
     }
     try:
